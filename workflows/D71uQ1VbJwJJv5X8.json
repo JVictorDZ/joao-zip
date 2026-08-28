@@ -1,0 +1,75 @@
+{
+  "updatedAt": "2026-08-13T23:22:46.554Z",
+  "createdAt": "2026-08-13T21:49:24.351Z",
+  "id": "D71uQ1VbJwJJv5X8",
+  "name": "My workflow",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "path": "cotacao",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a183ada9-2df0-4c91-b3f2-ea9a4ee2c8c7",
+      "name": "Webhook",
+      "webhookId": "5d0b15d9-9f39-4652-a364-d83d738c1096"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "9e6cae22-f1dd-4051-bd05-20851bc1fb4a",
+      "name": "HTTP Request"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "0c8d132b-6b70-43bc-97c6-658d75074566",
+  "activeVersionId": null,
+  "triggerCount": 0,
+  "shared": [
+    {
+      "updatedAt": "2026-08-13T21:49:24.359Z",
+      "createdAt": "2026-08-13T21:49:24.359Z",
+      "role": "workflow:owner",
+      "workflowId": "D71uQ1VbJwJJv5X8",
+      "projectId": "fV9jIp7MskiAgIlZ"
+    }
+  ],
+  "activeVersion": null,
+  "tags": []
+}
